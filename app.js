@@ -48,7 +48,7 @@ app.use('/api', [examRoutes(examController), announcementsRoutes(announcementsCo
 connect()
     .then(() => {
         console.log('Connected to MongoDB')
-        app.listen(5000, () => {
+        server.listen(5000, () => {
             console.log(`Server is running on port 5000`)
         })
     })
